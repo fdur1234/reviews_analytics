@@ -21,7 +21,32 @@ for d in data:
 		new. append(d)
 print('一共有', len(new), '長度小於100')
 print(new[0])
+print(new[1])
 
 print(len(new[0]))
 
 print('第一筆小於100的資料有', len(new[0]), '個字元')
+
+#
+good = []
+for d in data:
+	if 'good' in d:
+		good.append(d)
+print('總共有', len(good), '筆資料提到good')
+
+# 清單快寫法
+good = [d for d in data if 'good' in d]
+
+
+bad = ['bad' in d for d in data if 'bad' in d]
+print(len(bad))
+
+
+
+
+
+
+
+
+
+
